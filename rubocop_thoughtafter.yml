@@ -1,0 +1,58 @@
+# Style Differences of opinion
+
+# Disabled
+# -------
+
+# https://rubocop.readthedocs.io/en/latest/cops_style/#styleifunlessmodifier
+# Checks for if and unless statements that would fit on one line if written as
+# a modifier if/unless. 
+Style/IfUnlessModifier:
+  Enabled: false
+
+# https://rubocop.readthedocs.io/en/latest/cops_style/#stylenegatedif
+# Checks for uses of if with a negated condition.
+Style/NegatedIf:
+  Enabled: false
+
+# https://rubocop.readthedocs.io/en/latest/cops_style/#stylenegatedwhile
+# Checks for uses of while with a negated condition.
+Style/NegatedWhile:
+  Enabled: false
+
+# https://rubocop.readthedocs.io/en/latest/cops_style/#styleaccessmodifierdeclarations
+# Access modifiers should be declared to apply to a group of methods or inline
+# before each method, depending on configuration.
+# https://github.com/rubocop-hq/rubocop/pull/5444
+# https://github.com/rubocop-hq/rubocop/issues/5953
+Style/AccessModifierDeclarations:
+  Enabled: false
+#  EnforcedStyle: inline
+
+# Configured:
+# -----------
+
+# https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutendalignment
+# If it's set to variable the end shall be aligned with the left-hand-side 
+# of the variable assignment, if there is one.
+#   a = if true
+#     1
+#   else
+#     2
+#   end
+Layout/EndAlignment:
+  AutoCorrect: true
+  EnforcedStyleAlignWith: variable
+
+# https://rubocop.readthedocs.io/en/latest/cops_style/#stylealias
+# https://github.com/rubocop-hq/rubocop/issues/4434
+# https://github.com/rubocop-hq/ruby-style-guide#alias-method
+# Cop supports --auto-correct.
+# Configuration parameters: EnforcedStyle.
+# SupportedStyles: prefer_alias, prefer_alias_method
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+
+# https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutendofline
+Layout/EndOfLine:
+  Enabled: true
+  EnforcedStyle: lf
