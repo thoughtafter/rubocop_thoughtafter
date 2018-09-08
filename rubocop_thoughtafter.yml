@@ -43,6 +43,11 @@ Layout/EndAlignment:
   AutoCorrect: true
   EnforcedStyleAlignWith: variable
 
+# https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutendofline
+Layout/EndOfLine:
+  Enabled: true
+  EnforcedStyle: lf
+
 # https://rubocop.readthedocs.io/en/latest/cops_style/#stylealias
 # https://github.com/rubocop-hq/rubocop/issues/4434
 # https://github.com/rubocop-hq/ruby-style-guide#alias-method
@@ -52,7 +57,11 @@ Layout/EndAlignment:
 Style/Alias:
   EnforcedStyle: prefer_alias_method
 
-# https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutendofline
-Layout/EndOfLine:
-  Enabled: true
-  EnforcedStyle: lf
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
