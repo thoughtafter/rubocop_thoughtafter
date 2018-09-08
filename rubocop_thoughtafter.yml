@@ -31,6 +31,10 @@ Style/AccessModifierDeclarations:
 # Configured:
 # -----------
 
+# http://docs.rubocop.org/en/stable/cops_layout/#layoutcaseindentation
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
 # https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutendalignment
 # If it's set to variable the end shall be aligned with the left-hand-side 
 # of the variable assignment, if there is one.
