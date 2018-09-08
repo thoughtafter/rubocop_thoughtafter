@@ -58,7 +58,7 @@ Style/Alias:
   EnforcedStyle: prefer_alias_method
 
 Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: consistent_comma
+  EnforcedStyleForMultiline: comma
 
 Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: consistent_comma
