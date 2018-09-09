@@ -33,7 +33,12 @@ Style/AccessModifierDeclarations:
 
 # http://docs.rubocop.org/en/stable/cops_layout/#layoutcaseindentation
 Layout/CaseIndentation:
+  Enabled: true
   EnforcedStyle: end
+
+Layout/DefEndAlignment:
+  Enabled: true
+  AutoCorrect: true
 
 # https://rubocop.readthedocs.io/en/latest/cops_layout/#layoutendalignment
 # If it's set to variable the end shall be aligned with the left-hand-side 
@@ -44,6 +49,7 @@ Layout/CaseIndentation:
 #     2
 #   end
 Layout/EndAlignment:
+  Enabled: true
   AutoCorrect: true
   EnforcedStyleAlignWith: variable
 
@@ -59,13 +65,17 @@ Layout/EndOfLine:
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: prefer_alias, prefer_alias_method
 Style/Alias:
+  Enabled: true
   EnforcedStyle: prefer_alias_method
 
 Style/TrailingCommaInArguments:
+  Enabled: true
   EnforcedStyleForMultiline: comma
 
 Style/TrailingCommaInArrayLiteral:
+  Enabled: true
   EnforcedStyleForMultiline: consistent_comma
 
 Style/TrailingCommaInHashLiteral:
+  Enabled: true
   EnforcedStyleForMultiline: consistent_comma
